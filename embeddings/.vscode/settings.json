@@ -1,0 +1,9 @@
+{
+    "python.analysis.extraPaths": [
+        "./src"
+    ],
+    "jupyter.notebookFileRoot": "${worksaceFolder}/embeddings",
+    "python.envFile": "${workspaceFolder}/embeddings/.env",
+    "editor.formatOnSave": true,
+    "python.pythonPath": ".venv/bin/python"
+}

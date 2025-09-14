@@ -1,0 +1,38 @@
+[project]
+name = "hugby-fantasy"
+version = "0.1.0"
+description = "My Data Science Project"
+readme = "README.md"
+authors = [{ name = "firstname.lastname", email= "firstname.lastname@auror.co"} ]
+requires-python =  ">=3.10,<=3.13"
+
+dependencies = [
+    "hydra-core>=1.3.2",
+    "ipykernel>=6.29.5",
+    "mip>=1.15.0",
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ipykernel>=6.29.5",
+    "pytest>=8.3.3",
+    "pre-commit>=3.8.0",
+    "ruff>=0.6.8",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+    "integration",
+]
+
+[project.scripts]
+hugby-fantasy = "hugby-fantasy.main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

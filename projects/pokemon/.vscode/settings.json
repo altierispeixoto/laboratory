@@ -1,0 +1,8 @@
+{
+    "python.analysis.extraPaths": [
+        "./src"
+    ],
+    "jupyter.notebookFileRoot": "${worksaceFolder}",
+    "python.envFile": "${workspaceFolder}/.env",
+    "editor.formatOnSave": true
+}

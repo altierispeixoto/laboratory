@@ -27,7 +27,6 @@ This repository is a collection of data science projects and experiments coverin
 Each project is self-contained in its own directory with detailed documentation and analysis.
 
 ## 🗂️ Project Structure
-
 ```
 laboratory/
 ├── boston-houses/          # Housing price prediction using linear regression
@@ -37,6 +36,38 @@ laboratory/
 ├── classification/        # Implementation of various classification algorithms
 ├── clustering/           # Implementation of clustering algorithms
 └── [other-projects]/     # Additional projects and experiments
+The repository is now organized by topic:
+
+```
+laboratory/
+├── business-cases/      # Applied analyses, real-world datasets, case studies
+│   ├── brazilian-stock-analysis/
+│   ├── car-crash-areas/
+│   ├── churn/
+│   ├── customer-segments/
+│   ├── marketing-campaign/
+│   ├── smartcab-reinforcement-learning/
+│   └── trademe/
+├── foundations/         # Basic ML algorithms, EDA, preprocessing
+│   ├── classification/
+│   ├── clustering/
+│   ├── data-normalization/
+│   ├── feature-selection/
+│   ├── linear-algebra/
+│   ├── linear-regression/
+│   ├── reduction-dimensionality/
+│   └── utils/
+├── advanced/            # Complex models, optimization, deep learning
+│   ├── embeddings/
+│   ├── experimental/
+│   ├── fuzzy-clustering/
+│   ├── genetic-algorithm-feat-selection/
+│   ├── gradient-descent/
+│   └── neural-networks-from-scratch/
+└── [other-projects]/    # Additional projects and experiments
+```
+
+See each folder for detailed documentation and analysis.
 ```
 
 ## 🚀 Getting Started

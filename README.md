@@ -15,59 +15,119 @@
 
 ## 📋 About
 
-This repository is a collection of data science projects and experiments covering various domains including:
+This repository is a comprehensive collection of data science and machine learning projects, organized into three main categories:
 
-- 📈 Stock Market Analysis
-- 🏠 Housing Price Prediction
-- 🚗 Car Crash Analysis
+### 🏢 Business Cases
+Real-world applications and industry-specific analyses, including:
+- 📈 Stock Market Analysis & Portfolio Optimization
+- 🚗 Car Crash Pattern Analysis
+- 🔄 Customer Churn Prediction
 - 👥 Customer Segmentation
-- 🔄 Churn Prediction
-- 🤖 Machine Learning Algorithms Implementation
+- 🤖 ML Model Deployment
+- � Mixed Integer Programming
+- 🔍 Web Scraping & Data Collection
 
-Each project is self-contained in its own directory with detailed documentation and analysis.
+### 📚 Foundations
+Core machine learning concepts and fundamental algorithms:
+- 📊 Classification & Clustering
+- 📐 Linear Algebra & Regression
+- 📏 Distance Metrics & DTW
+- 🔬 Feature Selection & Dimensionality Reduction
+- 📝 Text Analysis (TF-IDF)
+- 🎯 Supervised Learning
+
+### 🚀 Advanced
+Complex models and cutting-edge techniques:
+- 🧠 Neural Networks & Deep Learning
+- 🕸️ Complex Networks & Graph Analytics
+- 🔄 Distributed Computing with PySpark
+- 🎯 AutoML with PyCaret
+- 🧬 Genetic Algorithms
+- 📊 Advanced Clustering
 
 ## 🗂️ Project Structure
-```
-laboratory/
-├── boston-houses/          # Housing price prediction using linear regression
-├── brazilian-stock-analysis/ # Brazilian stock market analysis and portfolio optimization
-├── car-crash-areas/       # Analysis of car crash patterns and clustering
-├── churn/                 # Customer churn prediction models
-├── classification/        # Implementation of various classification algorithms
-├── clustering/           # Implementation of clustering algorithms
-└── [other-projects]/     # Additional projects and experiments
-The repository is now organized by topic:
+
+The repository is organized into three main categories, each focusing on different aspects of data science and machine learning:
 
 ```
 laboratory/
-├── business-cases/      # Applied analyses, real-world datasets, case studies
-│   ├── brazilian-stock-analysis/
-│   ├── car-crash-areas/
-│   ├── churn/
-│   ├── customer-segments/
-│   ├── marketing-campaign/
-│   ├── smartcab-reinforcement-learning/
-│   └── trademe/
-├── foundations/         # Basic ML algorithms, EDA, preprocessing
-│   ├── classification/
-│   ├── clustering/
-│   ├── data-normalization/
-│   ├── feature-selection/
-│   ├── linear-algebra/
-│   ├── linear-regression/
-│   ├── reduction-dimensionality/
-│   └── utils/
-├── advanced/            # Complex models, optimization, deep learning
-│   ├── embeddings/
-│   ├── experimental/
-│   ├── fuzzy-clustering/
-│   ├── genetic-algorithm-feat-selection/
-│   ├── gradient-descent/
-│   └── neural-networks-from-scratch/
-└── [other-projects]/    # Additional projects and experiments
+├── business-cases/      # Real-world applications and analyses
+│   ├── brazilian-stock-analysis/    # Stock market analysis and portfolio optimization
+│   ├── car-crash-areas/            # Geospatial analysis of accident patterns
+│   ├── churn/                      # Customer churn prediction
+│   ├── customer-segments/          # Customer segmentation analysis
+│   ├── disney/                     # Disney-related data analysis
+│   ├── marketing-campaign/         # Marketing analytics
+│   ├── mixed-integer-linear-programming/  # Optimization problems
+│   ├── ml-api/                     # ML model deployment API
+│   ├── package-inserts/            # Medical package insert analysis
+│   ├── smartcab-reinforcement-learning/   # RL for autonomous driving
+│   └── trademe/                    # Trade analysis
+│
+├── foundations/         # Core ML concepts and algorithms
+│   ├── classification/             # Basic classification algorithms
+│   ├── clustering/                 # Clustering implementations
+│   ├── data-normalization/         # Data preprocessing
+│   ├── distances/                  # Distance metrics
+│   ├── dynamic-time-warping/       # Time series analysis
+│   ├── feature-selection/          # Feature engineering
+│   ├── iris/                       # Classic ML dataset
+│   ├── linear-algebra/             # Mathematical foundations
+│   ├── linear-regression/          # Regression techniques
+│   ├── reduction-dimensionality/   # Dimension reduction
+│   ├── regression/                 # Advanced regression
+│   ├── student-intervention/       # Educational data mining
+│   └── tf-idf/                     # Text feature engineering
+│
+├── advanced/           # Advanced techniques and implementations
+│   ├── complex-networks/           # Graph analytics
+│   ├── embeddings/                 # Vector representations
+│   ├── experimental/               # Research implementations
+│   ├── exponential-backoff/        # Retry mechanisms
+│   ├── fuzzy-clustering/           # Fuzzy logic clustering
+│   ├── genetic-algorithm-feat-selection/  # Feature selection
+│   ├── gradient-descent/           # Optimization algorithms
+│   ├── human-activity-recognition/ # Deep learning
+│   ├── neural-networks-from-scratch/  # NN implementations
+│   ├── pycaret/                    # AutoML experiments
+│   └── pyspark+sklearn/            # Distributed ML
 ```
 
-See each folder for detailed documentation and analysis.
+```
+
+## 📦 Project Dependencies
+
+Each project may have its own specific requirements, but the general dependencies are:
+
+- Python 3.8+
+- Jupyter Notebook/Lab
+- Common Data Science Libraries:
+  - NumPy
+  - Pandas
+  - Scikit-learn
+  - Matplotlib
+  - Seaborn
+  - TensorFlow/PyTorch (for deep learning projects)
+
+## 🚀 Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/altierispeixoto/laboratory.git
+cd laboratory
+```
+
+2. Set up the environment using uv (Recommended)
+
+[uv](https://github.com/astral-sh/uv) is a modern Python package installer and resolver:
+
+```bash
+# Install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Create virtual environment and install dependencies
+uv venv
+source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 ```
 
 ## 🚀 Getting Started
@@ -91,7 +151,6 @@ cd laboratory
 #### Option A: Using uv (Recommended)
 [uv](https://github.com/astral-sh/uv) is a modern Python package installer and resolver written in Rust, offering significantly faster installation speeds.
 
-```bash
 # Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
@@ -101,21 +160,7 @@ source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 uv pip install -r requirements.txt
 ```
 
-#### Option B: Using traditional pip
-```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
 ```
-
-The `uv` method is recommended for:
-- 🚀 Faster package installation (up to 10-100x)
-- 📦 More reliable dependency resolution
-- 🔒 Improved security with package verification
-- 💨 Efficient caching of wheel files
 
 ## 📊 Projects Overview
 
@@ -133,6 +178,7 @@ Each project directory contains:
 - **Deep Learning**: Neural Networks implementations
 - **Statistical Analysis**: SciPy, StatsModels
 
+```
 ## 📝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.

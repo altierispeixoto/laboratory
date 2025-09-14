@@ -151,16 +151,17 @@ cd laboratory
 #### Option A: Using uv (Recommended)
 [uv](https://github.com/astral-sh/uv) is a modern Python package installer and resolver written in Rust, offering significantly faster installation speeds.
 
+
+```
 # Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Create virtual environment and install dependencies
 uv venv
 source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
-uv pip install -r requirements.txt
+uv sync
 ```
 
-```
 
 ## 📊 Projects Overview
 

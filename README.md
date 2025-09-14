@@ -162,45 +162,12 @@ source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 uv sync
 ```
 
-
-## 📊 Projects Overview
-
-Each project directory contains:
-- Jupyter notebooks with analysis
-- Data files or instructions to obtain them
-- Documentation of methodology and findings
-- Requirements specific to the project
-
-## 🛠️ Tools & Technologies
-
-- **Data Processing**: Pandas, NumPy
-- **Machine Learning**: Scikit-learn, TensorFlow, PyTorch
-- **Visualization**: Matplotlib, Seaborn, Plotly
-- **Deep Learning**: Neural Networks implementations
-- **Statistical Analysis**: SciPy, StatsModels
-
-```
-## 📝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 📧 Contact
 
 Altieris Peixoto - [GitHub](https://github.com/altierispeixoto)
 
 ## 🙏 Acknowledgments
-
-- All contributors and maintainers
+- Inspiration from various online courses and tutorials
 - Open source community for tools and libraries
 - Data providers and sources used in projects
 

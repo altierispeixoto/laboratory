@@ -16,4 +16,13 @@ dependencies = [
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
     "tqdm>=4.67.1",
+    "torch>=2.2.0",
+    "torch-geometric>=2.4.0",
+    "transformers>=4.36.0",
 ]
+
+[tool.setuptools]
+packages = ["advanced", "foundations", "projects", "miscelaneous"]
+
+[dependency-groups]
+dev = ["ipykernel>=6.30.1"]

@@ -555,6 +555,11 @@ dependencies = [
     { name = "tqdm" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "ipykernel", specifier = ">=6.30.1" },
@@ -569,6 +574,9 @@ requires-dist = [
     { name = "seaborn", specifier = ">=0.13.2" },
     { name = "tqdm", specifier = ">=4.67.1" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=6.30.1" }]
 
 [[package]]
 name = "matplotlib"

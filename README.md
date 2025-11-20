@@ -162,15 +162,4 @@ source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 uv sync
 ```
 
-## 📧 Contact
-
-Altieris Peixoto - [GitHub](https://github.com/altierispeixoto)
-
-## 🙏 Acknowledgments
-- Inspiration from various online courses and tutorials
-- Open source community for tools and libraries
-- Data providers and sources used in projects
-
----
-
 ⭐️ If you find this repository useful, please consider giving it a star!

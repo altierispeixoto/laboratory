@@ -27,6 +27,7 @@ dependencies = [
     "optuna>=4.6.0",
     "torchmetrics>=1.8.2",
     "dlai-grader>=2.1.0",
+    "lightning>=2.6.0",
 ]
 
 [tool.setuptools]

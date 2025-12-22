@@ -1,0 +1,3 @@
+chest_xray/
+unseen/
+resnet18_chest_xray_classifier_weights.pth

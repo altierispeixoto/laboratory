@@ -9,3 +9,4 @@ __pycache__/
 *.pyo
 *.pyd
 *.tmp
+projects/pytorch-professional/optimization/module3/finetuned_text/recipes_fruit_veg.csv

@@ -29,6 +29,7 @@ dependencies = [
     "dlai-grader>=2.1.0",
     "lightning>=2.6.0",
     "opencv-python>=4.11.0.86",
+    "torchinfo>=1.8.0",
 ]
 
 [tool.setuptools]

@@ -696,6 +696,15 @@ http = [
 ]
 
 [[package]]
+name = "graphviz"
+version = "0.21"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f8/b3/3ac91e9be6b761a4b30d66ff165e54439dcd48b83f4e20d644867215f6ca/graphviz-0.21.tar.gz", hash = "sha256:20743e7183be82aaaa8ad6c93f8893c923bd6658a04c32ee115edb3c8a835f78", size = 200434 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/91/4c/e0ce1ef95d4000ebc1c11801f9b944fa5910ecc15b5e351865763d8657f8/graphviz-0.21-py3-none-any.whl", hash = "sha256:54f33de9f4f911d7e84e4191749cac8cc5653f815b06738c54db9a15ab8b1e42", size = 47300 },
+]
+
+[[package]]
 name = "greenlet"
 version = "3.2.4"
 source = { registry = "https://pypi.org/simple" }
@@ -1136,6 +1145,7 @@ dependencies = [
     { name = "matplotlib" },
     { name = "mip" },
     { name = "neo4j" },
+    { name = "netron" },
     { name = "numpy" },
     { name = "openai" },
     { name = "opencv-python" },
@@ -1150,6 +1160,7 @@ dependencies = [
     { name = "torchinfo" },
     { name = "torchmetrics" },
     { name = "torchvision" },
+    { name = "torchviz" },
     { name = "tqdm" },
     { name = "transformers" },
 ]
@@ -1170,6 +1181,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.6" },
     { name = "mip", specifier = ">=1.15.0" },
     { name = "neo4j", specifier = ">=5.28.2" },
+    { name = "netron", specifier = ">=8.8.0" },
     { name = "numpy", specifier = ">=2.3.3" },
     { name = "openai", specifier = ">=1.107.2" },
     { name = "opencv-python", specifier = ">=4.11.0.86" },
@@ -1184,6 +1196,7 @@ requires-dist = [
     { name = "torchinfo", specifier = ">=1.8.0" },
     { name = "torchmetrics", specifier = ">=1.8.2" },
     { name = "torchvision", specifier = ">=0.23.0" },
+    { name = "torchviz", specifier = ">=0.0.3" },
     { name = "tqdm", specifier = ">=4.67.1" },
     { name = "transformers", specifier = ">=4.36.0" },
 ]
@@ -1539,6 +1552,14 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/83/f8/51569ac65d696c8ecbee95938f89d4abf00f47d58d48f6fbabfe8f0baefe/nest_asyncio-1.6.0.tar.gz", hash = "sha256:6f172d5449aca15afd6c646851f4e31e02c598d553a667e38cafa997cfec55fe", size = 7418 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a0/c4/c2971a3ba4c6103a3d10c4b0f24f461ddc027f0f09763220cf35ca1401b3/nest_asyncio-1.6.0-py3-none-any.whl", hash = "sha256:87af6efd6b5e897c81050477ef65c62e2b2f35d51703cae01aff2905b1852e1c", size = 5195 },
+]
+
+[[package]]
+name = "netron"
+version = "8.8.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/80/bc/5e124d1d32e56439fd28e5ee59025a6e54546629d10ae8f2ce0428370d3d/netron-8.8.0-py3-none-any.whl", hash = "sha256:81c41a38fea0b5c80c309b79a38177f9e757d977478d90c855cf7adfe0c75a11", size = 3150084 },
 ]
 
 [[package]]
@@ -3044,6 +3065,19 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/1d/9d/406cea60a9eb9882145bcd62a184ee61e823e8e1d550cdc3c3ea866a9445/torchvision-0.23.0-cp313-cp313t-manylinux_2_28_aarch64.whl", hash = "sha256:2a3299d2b1d5a7aed2d3b6ffb69c672ca8830671967eb1cee1497bacd82fe47b", size = 2359295 },
     { url = "https://files.pythonhosted.org/packages/2b/f4/34662f71a70fa1e59de99772142f22257ca750de05ccb400b8d2e3809c1d/torchvision-0.23.0-cp313-cp313t-manylinux_2_28_x86_64.whl", hash = "sha256:76bc4c0b63d5114aa81281390f8472a12a6a35ce9906e67ea6044e5af4cab60c", size = 8800474 },
     { url = "https://files.pythonhosted.org/packages/6e/f5/b5a2d841a8d228b5dbda6d524704408e19e7ca6b7bb0f24490e081da1fa1/torchvision-0.23.0-cp313-cp313t-win_amd64.whl", hash = "sha256:b9e2dabf0da9c8aa9ea241afb63a8f3e98489e706b22ac3f30416a1be377153b", size = 1527667 },
+]
+
+[[package]]
+name = "torchviz"
+version = "0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "graphviz" },
+    { name = "torch" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5c/80/a84e0e8877630262c3f4c8d2e7fd0647c6751afeca301cfc04a1b65ac820/torchviz-0.0.3.tar.gz", hash = "sha256:2e95f2fea7a31ec9549f2d6bbf446d75aeb6a9880fcf13e7dd843fdcdb4a3725", size = 5705 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5e/06/bea648249802b65282414caf5e7bc94fcb6e5a3e311b537845417d19edb9/torchviz-0.0.3-py3-none-any.whl", hash = "sha256:5eab98d17cbe8a54727cfa6a527681cff613430fff8fc68f52302ca5fa26cdf1", size = 5708 },
 ]
 
 [[package]]

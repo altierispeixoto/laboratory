@@ -30,6 +30,8 @@ dependencies = [
     "lightning>=2.6.0",
     "opencv-python>=4.11.0.86",
     "torchinfo>=1.8.0",
+    "torchviz>=0.0.3",
+    "netron>=8.8.0",
 ]
 
 [tool.setuptools]

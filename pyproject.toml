@@ -32,6 +32,7 @@ dependencies = [
     "torchinfo>=1.8.0",
     "torchviz>=0.0.3",
     "netron>=8.8.0",
+    "scikit-image>=0.26.0",
 ]
 
 [tool.setuptools]

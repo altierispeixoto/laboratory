@@ -1,0 +1,4 @@
+best_model/
+CIFAR10_data/
+mlruns/
+mlflow.db

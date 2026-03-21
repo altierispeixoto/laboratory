@@ -8,14 +8,21 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-3C93B4.svg?style=flat)](http://choosealicense.com/licenses/mit/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?logo=jupyter&logoColor=white)](https://jupyter.org/)
 
 </div>
 
+## Table of Contents
+
+- [About](#-about)
+- [Project Structure](#️-project-structure)
+- [Getting Started](#-getting-started)
+- [Dependencies](#-dependencies)
+
 ## 📋 About
 
-This repository is a comprehensive collection of data science and machine learning projects, organized into three main categories:
+This repository is a comprehensive collection of data science and machine learning projects, organized into four main categories:
 
 ### 🏢 Business Cases
 Real-world applications and industry-specific analyses, including:
@@ -24,8 +31,12 @@ Real-world applications and industry-specific analyses, including:
 - 🔄 Customer Churn Prediction
 - 👥 Customer Segmentation
 - 🤖 ML Model Deployment
-- � Mixed Integer Programming
+- 🔢 Mixed Integer Programming
 - 🔍 Web Scraping & Data Collection
+
+### 🎓 Courses
+Structured learning paths and course materials:
+- 🔥 PyTorch Professional: structured course covering foundations, advanced architectures, optimization, and deployment (Modules 1–4)
 
 ### 📚 Foundations
 Core machine learning concepts and fundamental algorithms:
@@ -47,8 +58,6 @@ Complex models and cutting-edge techniques:
 
 ## 🗂️ Project Structure
 
-The repository is organized into three main categories, each focusing on different aspects of data science and machine learning:
-
 ```
 laboratory/
 ├── business-cases/      # Real-world applications and analyses
@@ -57,12 +66,17 @@ laboratory/
 │   ├── churn/                      # Customer churn prediction
 │   ├── customer-segments/          # Customer segmentation analysis
 │   ├── disney/                     # Disney-related data analysis
+│   ├── hugby-fantasy/              # Fantasy sports analytics
 │   ├── marketing-campaign/         # Marketing analytics
 │   ├── mixed-integer-linear-programming/  # Optimization problems
 │   ├── ml-api/                     # ML model deployment API
 │   ├── package-inserts/            # Medical package insert analysis
+│   ├── pokemon/                    # Pokémon data analysis
 │   ├── smartcab-reinforcement-learning/   # RL for autonomous driving
 │   └── trademe/                    # Trade analysis
+│
+├── courses/             # Structured course materials
+│   └── pytorch-professional/       # PyTorch course (Modules 1–4)
 │
 ├── foundations/         # Core ML concepts and algorithms
 │   ├── classification/             # Basic classification algorithms
@@ -79,7 +93,7 @@ laboratory/
 │   ├── student-intervention/       # Educational data mining
 │   └── tf-idf/                     # Text feature engineering
 │
-├── advanced/           # Advanced techniques and implementations
+├── advanced/            # Advanced techniques and implementations
 │   ├── complex-networks/           # Graph analytics
 │   ├── embeddings/                 # Vector representations
 │   ├── experimental/               # Research implementations
@@ -91,23 +105,13 @@ laboratory/
 │   ├── neural-networks-from-scratch/  # NN implementations
 │   ├── pycaret/                    # AutoML experiments
 │   └── pyspark+sklearn/            # Distributed ML
+│
+└── miscellaneous/       # Configuration, setup, and reference materials
+    ├── config/                     # Environment configuration
+    ├── my-setup/                   # Personal tooling setup
+    ├── papers/                     # Research papers
+    └── proxy-rotating/             # Proxy utilities
 ```
-
-```
-
-## 📦 Project Dependencies
-
-Each project may have its own specific requirements, but the general dependencies are:
-
-- Python 3.8+
-- Jupyter Notebook/Lab
-- Common Data Science Libraries:
-  - NumPy
-  - Pandas
-  - Scikit-learn
-  - Matplotlib
-  - Seaborn
-  - TensorFlow/PyTorch (for deep learning projects)
 
 ## 🚀 Getting Started
 
@@ -117,42 +121,11 @@ git clone https://github.com/altierispeixoto/laboratory.git
 cd laboratory
 ```
 
-2. Set up the environment using uv (Recommended)
+2. Set up the environment using [uv](https://github.com/astral-sh/uv) (Recommended)
 
-[uv](https://github.com/astral-sh/uv) is a modern Python package installer and resolver:
-
-```bash
-# Install uv
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Create virtual environment and install dependencies
-uv venv
-source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.8+
-- Jupyter Notebook/Lab
-- Required Python packages (listed in each project's requirements)
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/altierispeixoto/laboratory.git
-cd laboratory
-```
-
-2. Set up the environment (choose one method):
-
-#### Option A: Using uv (Recommended)
 [uv](https://github.com/astral-sh/uv) is a modern Python package installer and resolver written in Rust, offering significantly faster installation speeds.
 
-
-```
+```bash
 # Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
@@ -162,4 +135,20 @@ source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 uv sync
 ```
 
-⭐️ If you find this repository useful, please consider giving it a star!
+## 📦 Dependencies
+
+Each project may have its own specific requirements, but the general dependencies are:
+
+- Python 3.12+
+- Jupyter Notebook/Lab
+- Common Data Science Libraries:
+  - NumPy
+  - Pandas
+  - Scikit-learn
+  - Matplotlib
+  - Seaborn
+  - TensorFlow/PyTorch (for deep learning projects)
+
+---
+
+⭐ If you find this repository useful, please consider giving it a star!
